@@ -23,3 +23,11 @@ jobs:
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+   
+      - name: Install npm
+        run: npm install
+      
+      - name: Lancement des tests
+        run: npm test
+        
+          
